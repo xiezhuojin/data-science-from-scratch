@@ -39,12 +39,12 @@ def binomial_historgram(p: float, n: int, num_points: int) -> None:
             0.8,
             color="0.75"
             )
-    mu = p * n
-    sigma = math.sqrt(n * p * (1 - p))
 
     # use a line chart to show the normal approximation
-    xs = numpy.arange(min(data), max(data) + 1)
-    # ys = norm.cdf([x + 0.5 for x in xs], loc=mu, scale=sigma) - norm.cdf(xs - 0.5, loc=mu, scale=sigma)
+    # xs = numpy.arange(min(data), max(data) + 1)
+    xs = numpy.arange(0, max(data) + 1)
+    mu = p * n
+    sigma = math.sqrt(n * p * (1 - p))
     ys = norm.pdf(xs, loc=mu, scale=sigma)
     plt.plot(xs, ys)
     plt.title("Binomial Distribution vs. Normal Approximation")
