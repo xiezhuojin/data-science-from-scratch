@@ -1,4 +1,4 @@
-from finding_key_connectors import *
+from scratch.introduction.finding_key_connectors import *
 
 
 def get_friends(friendships: DefaultDict[int, List[int]], user_id: int, level: int) -> List[int]:

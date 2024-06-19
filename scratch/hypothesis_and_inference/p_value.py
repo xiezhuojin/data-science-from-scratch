@@ -1,4 +1,4 @@
-from statistical_hypothesis_testing import \
+from scratch.hypothesis_and_inference.statistical_hypothesis_testing import \
     normal_probability_above, normal_probability_below, normal_approximation_to_binomial
 
 def two_sided_p_value(x: float, mu: float=0, sigma: float=1) -> float:

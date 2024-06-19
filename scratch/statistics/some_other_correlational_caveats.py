@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 
-from correlation import correlation
+from scratch.statistics.correlation import correlation
 
 
 # A correlation of zero indicates that there is no linear relationship between

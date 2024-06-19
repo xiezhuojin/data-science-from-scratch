@@ -1,7 +1,7 @@
 import random
 
 from scratch.linear_algebra.vectors import Vector, vector_mean
-from using_the_gradient import gradient_step
+from scratch.gradient_descent.using_the_gradient import gradient_step
 
 inputs = [(x, 20 * x + 5) for x in range(-50, 50)]
 

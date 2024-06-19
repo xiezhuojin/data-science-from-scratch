@@ -1,6 +1,6 @@
 import math
 
-from statistical_hypothesis_testing import normal_two_sided_bounds
+from scratch.hypothesis_and_inference.statistical_hypothesis_testing import normal_two_sided_bounds
 
 # say, we observe 525 heads outof 1,000 flips, then we estimate p equals 0.525
 p_hat = 525 / 1000

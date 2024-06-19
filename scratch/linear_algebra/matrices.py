@@ -1,7 +1,7 @@
 from typing import List, Tuple, Callable
 from itertools import chain
 
-from vectors import Vector
+from scratch.linear_algebra.vectors import Vector
 
 
 Matric = List[List[float]]

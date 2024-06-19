@@ -1,7 +1,7 @@
 from sympy import Symbol, Equality, Rational
 
-from dependence_and_independence import p_e, p_f, p_e_and_f, probability
-from conditional_probability import p_e_on_f
+from scratch.probability.dependence_and_independence import p_e, p_f, p_e_and_f, probability
+from scratch.probability.conditional_probability import p_e_on_f
 
 f_on_e = Symbol("f|e")
 f_on_not_e = Symbol("f|^e")

@@ -1,7 +1,7 @@
 from typing import Tuple
 import math
 
-from p_value import two_sided_p_value
+from scratch.hypothesis_and_inference.p_value import two_sided_p_value
 
 # 假设我们有两份广告词：A("tastes great!"), B("less bias!")，我们对其做A/B test，
 # 若A的点击为990/1000，B的点击为10/1000，我们可以自信地任务广告词A更好，但是如果A、B的点击

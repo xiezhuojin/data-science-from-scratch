@@ -2,8 +2,8 @@ import random
 from typing import TypeVar, List, Iterator
 
 from scratch.linear_algebra.vectors import vector_mean
-from using_the_gradient import gradient_step
-from using_gradient_descent_to_fix_models import linear_gradient, inputs
+from scratch.gradient_descent.using_the_gradient import gradient_step
+from scratch.gradient_descent.using_gradient_descent_to_fix_models import linear_gradient, inputs
 
 # minibatch gradient descent, in which we compute the gradient based on a "minibatch"
 # sampled from the larger dataset:

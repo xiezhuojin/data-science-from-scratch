@@ -1,7 +1,7 @@
 from typing import List
 import random
 
-from statistical_hypothesis_testing import normal_two_sided_bounds, normal_approximation_to_binomial
+from scratch.hypothesis_and_inference.statistical_hypothesis_testing import normal_two_sided_bounds, normal_approximation_to_binomial
 
 def run_experiment() -> List[bool]:
     """

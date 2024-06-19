@@ -4,7 +4,7 @@ import random
 from sympy import Symbol, Equality, Rational, simplify
 from sympy.stats import Binomial, density
 
-from dependence_and_independence import probability, p_e_and_f, p_f
+from scratch.probability.dependence_and_independence import probability, p_e_and_f, p_f
 
 
 e_on_f = Symbol("e|f")
