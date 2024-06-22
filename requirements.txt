@@ -7,3 +7,7 @@ requests
 html5lib
 lxml
 python-dateutil
+
+tqdm
+statsmodel
+scikt-learn
