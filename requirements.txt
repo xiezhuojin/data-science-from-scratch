@@ -9,5 +9,5 @@ lxml
 python-dateutil
 
 tqdm
-statsmodel
-scikt-learn
+statsmodels
+scikit-learn
