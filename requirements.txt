@@ -11,3 +11,4 @@ python-dateutil
 tqdm
 statsmodels
 scikit-learn
+seaborn
