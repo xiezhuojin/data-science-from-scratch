@@ -52,7 +52,7 @@ def median(v: List[float]) -> float:
     FInds the 'middle-most' value of v.
     """
 
-    return _median_odd if len(v) % 2 == 1 else _median_even(v)
+    return _median_odd(v) if len(v) % 2 == 1 else _median_even(v)
 
 def quantile(xs: List[float], p:  float) -> float:
     """
