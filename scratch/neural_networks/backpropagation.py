@@ -95,19 +95,19 @@ network = [ # hidden layer: 2 inputs -> 2 outputs
 
 learning_rate = 1.0
 
-for epoch in tqdm.trange(20000, desc="neural net for xor"):
-    for x, y in zip(xs, ys):
-        gradients = sqerror_gradients(network, x, y)
+# for epoch in tqdm.trange(20000, desc="neural net for xor"):
+#     for x, y in zip(xs, ys):
+#         gradients = sqerror_gradients(network, x, y)
 
-        # Take a gradient step for each neuron in each layer
-        network = [[gradient_step(neuron, grad, -learning_rate)
-                    for neuron, grad in zip(layer, layer_grad)]
-                   for layer, layer_grad in zip(network, gradients)]
+#         # Take a gradient step for each neuron in each layer
+#         network = [[gradient_step(neuron, grad, -learning_rate)
+#                     for neuron, grad in zip(layer, layer_grad)]
+#                    for layer, layer_grad in zip(network, gradients)]
 
-# check that it learned XOR
-assert feed_forward(network, [0, 0])[-1][0] < 0.01
-assert feed_forward(network, [0, 1])[-1][0] > 0.99
-assert feed_forward(network, [1, 0])[-1][0] > 0.99
-assert feed_forward(network, [1, 1])[-1][0] < 0.01
+# # check that it learned XOR
+# assert feed_forward(network, [0, 0])[-1][0] < 0.01
+# assert feed_forward(network, [0, 1])[-1][0] > 0.99
+# assert feed_forward(network, [1, 0])[-1][0] > 0.99
+# assert feed_forward(network, [1, 1])[-1][0] < 0.01
 
-pprint(network)
+# pprint(network)

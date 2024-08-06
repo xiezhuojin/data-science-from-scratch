@@ -12,3 +12,5 @@ tqdm
 statsmodels
 scikit-learn
 seaborn
+
+mnist

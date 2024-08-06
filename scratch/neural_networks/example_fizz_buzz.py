@@ -65,21 +65,21 @@ network = [
 
 learning_rate = 1.0
 
-with tqdm.trange(500) as t:
-    for epoch in t:
-        epoch_loss = 0.0
+# with tqdm.trange(500) as t:
+#     for epoch in t:
+#         epoch_loss = 0.0
 
-        for x, y in zip(xs, ys):
-            predicted = feed_forward(network, x)[-1]
-            epoch_loss += squared_distance(predicted, y)
-            gradients = sqerror_gradients(network, x, y)
+#         for x, y in zip(xs, ys):
+#             predicted = feed_forward(network, x)[-1]
+#             epoch_loss += squared_distance(predicted, y)
+#             gradients = sqerror_gradients(network, x, y)
 
-            # Take a gradient step for each neuron in each layer
-            network = [[gradient_step(neuron, grad, -learning_rate)
-                        for neuron, grad in zip(layer, layer_grad)]
-                    for layer, layer_grad in zip(network, gradients)]
+#             # Take a gradient step for each neuron in each layer
+#             network = [[gradient_step(neuron, grad, -learning_rate)
+#                         for neuron, grad in zip(layer, layer_grad)]
+#                     for layer, layer_grad in zip(network, gradients)]
 
-        t.set_description(f"fizz buzz (loss: {epoch_loss:.2f})")
+#         t.set_description(f"fizz buzz (loss: {epoch_loss:.2f})")
 
 # At last we’re ready to solve our original problem. We have one remaining issue.
 # Our network will produce a four-dimensional vector of numbers, but we want a 
@@ -101,14 +101,14 @@ assert argmax([-1, 10, 5, 20, -3]) == 3   # items[3] is largest
 
 num_correct = 0
 
-for i in range(1, 101):
-    x = binary_encode(i)
-    predicted = argmax(feed_forward(network, x)[-1])
-    actual = argmax(fizz_buzz_encode(i))
-    labels = [str(i), "fizz", "buzz", "fizzbuzz"]
+# for i in range(1, 101):
+#     x = binary_encode(i)
+#     predicted = argmax(feed_forward(network, x)[-1])
+#     actual = argmax(fizz_buzz_encode(i))
+#     labels = [str(i), "fizz", "buzz", "fizzbuzz"]
 
-    print(i, labels[predicted], labels[actual])
-    if actual == predicted:
-        num_correct += 1
+#     print(i, labels[predicted], labels[actual])
+#     if actual == predicted:
+#         num_correct += 1
 
-print(num_correct, "/", 100)
+# print(num_correct, "/", 100)
